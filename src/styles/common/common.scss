@@ -1,0 +1,101 @@
+@import "../default/variables.scss";
+
+// Btn ========================================================
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 12px 45px;
+  min-width: 200px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+
+  background: none;
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+
+  &_form {
+    border: 2px solid #fff;
+    background-color: rgb(137, 214, 238);
+
+    @media (min-width: $md2 + px) {
+      &:hover {
+        background-color: rgb(96, 196, 226);
+      }
+
+      &:active {
+        background-color: rgb(74, 180, 212);
+      }
+    }
+  }
+}
+
+// Forms ========================================================
+
+.form {
+  &__content {
+    margin-bottom: 25px;
+  }
+
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    flex: 0 0 200px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  &__input {
+    display: block;
+    flex: 1 1 auto;
+    padding: 10px;
+    height: 35px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+
+  &__btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+
+    text-align: center;
+  }
+
+  &__actions {
+    display: block;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  }
+}

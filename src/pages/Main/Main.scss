@@ -1,0 +1,24 @@
+.main-page {
+  display: flex;
+  min-height: 100vh;
+  flex: 1 1 100%;
+  padding: 50px 0;
+
+  background-color: rgb(117, 251, 139);
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    padding: 25px;
+
+    border-radius: 15px;
+    background-color: rgb(60, 46, 255);
+    border: 4px solid #fff;
+  }
+}
